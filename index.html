@@ -3,9 +3,232 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>dashboard Test - 5</title>
+
+    <!-- css style link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- phosphor icon CDN-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
   <body>
-    
+    <div class="dashboard">
+      <div class="menu-icon-category">
+        <h2>L</h2>
+        <nav class="category-icon">
+          <ul class="flex">
+            <li class="active"><i class="ph ph-house"></i></li>
+            <li><i class="ph ph-users"></i></li>
+            <li><i class="ph ph-calendar-dots"></i></li>
+            <li><i class="ph ph-check-square-offset"></i></li>
+            <li><i class="ph ph-clock"></i></li>
+            <li><i class="ph ph-chat-circle"></i></li>
+          </ul>
+        </nav>
+        <div class="note-faq">
+          <i class="ph ph-question-mark"></i>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <div class="dashboard-logo">
+          <h2>Ziferblat</h2>
+          <p>Teamwork & time management</p>
+        </div>
+        <nav class="lable-menu">
+          <ul class="lable-menu-container">
+            <!-- item - 1 -->
+            <li class="">
+              <div class="lable flex items-center justify-between">
+                <p>Team</p>
+                <i class="ph ph-caret-right"></i>
+              </div>
+            </li>
+
+            <!-- item - 2 -->
+            <li class="item-2">
+              <div class="lable flex items-center justify-between">
+                <p>Projects</p>
+                <i class="ph ph-caret-down"></i>
+              </div>
+              <ul class="sub-menu-item-container">
+                <li>All projects (4)</li>
+                <li>Design system</li>
+                <li>Make unique design for customer</li>
+                <li>User Flow</li>
+                <li>UX research</li>
+                <li>Add new project</li>
+              </ul>
+            </li>
+
+            <!-- item - 3 -->
+            <li class="item-2">
+              <div class="lable flex items-center justify-between">
+                <p>Tasks</p>
+                <i class="ph ph-caret-down"></i>
+              </div>
+              <ul class="sub-menu-item-container">
+                <li>All tasks (3)</li>
+                <li>New (1)</li>
+                <li>In progress (1)</li>
+                <li>Done</li>
+                <li>Add new project</li>
+              </ul>
+            </li>
+
+            <!-- item - 4 -->
+            <li class="">
+              <div class="lable flex items-center justify-between">
+                <p>Reminders</p>
+                <i class="ph ph-caret-right"></i>
+              </div>
+            </li>
+
+            <!-- item - 5 -->
+            <li class="">
+              <div class="lable flex items-center justify-between">
+                <p>Messenger</p>
+                <i class="ph ph-caret-right"></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <div class="part_1">
+          <div class="search-darhboard">
+            <h3>Today, 4 October</h3>
+            <div class="search-container relative">
+              <input
+                id="search"
+                class="relative"
+                type="search"
+                placeholder="Searching for..."
+              />
+              <i class="ph ph-magnifying-glass"></i>
+            </div>
+          </div>
+
+          <!-- recent project with glance -->
+          <div class="recent-project-with-glance">
+            <!-- main dashboard glance heading -->
+            <p class="recent-projects">Recent projects</p>
+            <p class="view-all">View all</p>
+
+            <!-- main dashboard glance -->
+
+            <!-- card - 1 -->
+            <div class="card-orange">
+              <div class="card-space-wrapper">
+                <div class="profile-menu flex items-center justify-between">
+                  <div class="multiple-div-container">
+                    <span class="count">+3</span>
+                    <img
+                      class="multiple_avatar"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                      alt="avatar-1"
+                    />
+                    <img
+                      class="multiple_avatar"
+                      id="avatar-2"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                      alt="avatar-2"
+                    />
+                  </div>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+
+                <h3>Design system</h3>
+
+                <p class="deadline-tag">Deadline: 18 October</p>
+              </div>
+
+              <div class="progress-bar-container">
+                <p>84 hours / 40%</p>
+                <span class="progress"></span>
+              </div>
+            </div>
+
+            <!-- card - 2 -->
+
+            <div class="card-light">
+              <div class="card-space-wrapper">
+                <div class="profile-menu flex items-center justify-between">
+                  <div class="multiple-div-container">
+                    <span class="count_2">+2</span>
+                    <img
+                      class="multiple_avatar_light"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                      alt="avatar-1"
+                    />
+                    <img
+                      class="multiple_avatar_light"
+                      id="avatar-3"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                      alt="avatar-2"
+                    />
+                  </div>
+                  <i class="ph-fill ph-dots-three-outline-vertical"></i>
+                </div>
+
+                <h3>Make unique page for customer</h3>
+
+                <p class="deadline-tag">Deadline: 30 October</p>
+              </div>
+
+              <div class="progress-bar-container">
+                <p>108 hours / 75%</p>
+                <span class="progress_2"></span>
+              </div>
+            </div>
+
+            <!-- reminders container -->
+            <p class="reminder-heading">Reminders</p>
+
+            <div class="reminder-card-container">
+              <div class="flex items-center justify-between">
+                <div class="">
+                  <p class="time-tagline">Tomorrow, 16:00-18:00</p>
+                  <h3>Discussion of the interm results of the project</h3>
+                </div>
+                <button>Set reminder</button>
+              </div>
+              <div class="indicator flex">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="part_2"></div>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  // font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+  --color-primary: #f0894d;
+  --color-dark: #111111;
+  --color-gray: #9d9d9d;
+  --color-light: #f2ece2;
+  --color-light-dark: #fce6bd;
+  --color-light-dark-2: #fcbea4;
+  --color-white: #fff;
+}
+
+html {
+  // font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.items-center {
+  align-items: center;
+}
