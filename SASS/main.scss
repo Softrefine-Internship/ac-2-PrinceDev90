@@ -307,18 +307,18 @@ body {
   font-size: 12px;
 }
 
-.indicator {
-  justify-content: center;
+// .indicator {
+//   justify-content: center;
 
-  div {
-    display: flex;
-    margin-inline-end: 6px;
-    width: 3px !important;
-    height: 3px !important;
-    background-color: var(--color-primary);
+//   div {
+//     display: flex;
+//     margin-inline-end: 6px;
+//     width: 3px !important;
+//     height: 3px !important;
+//     background-color: var(--color-primary);
 
-    &:last-child {
-      margin: 0px;
-    }
-  }
-}
+//     &:last-child {
+//       margin: 0px;
+//     }
+//   }
+// }
