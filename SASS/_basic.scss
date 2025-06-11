@@ -5,7 +5,11 @@
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
-  // font-family: "Be Vietnam Pro", sans-serif;
+}
+
+* {
+  // font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 :root {
@@ -16,11 +20,6 @@
   --color-light-dark: #fce6bd;
   --color-light-dark-2: #fcbea4;
   --color-white: #fff;
-}
-
-html {
-  // font-family: "Questrial", sans-serif;
-  font-family: "Poppins", sans-serif;
 }
 
 .flex {
@@ -42,3 +41,7 @@ html {
 .items-center {
   align-items: center;
 }
+
+// responsive code
+
+// ==============================
