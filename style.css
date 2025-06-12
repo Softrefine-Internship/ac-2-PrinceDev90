@@ -191,6 +191,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
 .main .part_2 .sec-row .add_project {
   background-color: var(--color-primary);
@@ -1012,7 +1013,7 @@ body {
     padding: 12px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main .part_2 {
     padding: 12px;
     column-gap: 12px;
@@ -1109,6 +1110,37 @@ body {
   }
   .main .part_2 .sec-row {
     gap: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1240px) {
+  .aside {
+    display: none;
+  }
+  .main .part_2 {
+    padding: 12px;
+    column-gap: 12px;
+    grid-auto-rows: min-content;
+    box-shadow: none;
+  }
+  .dashboard {
+    grid-template-columns: 70px 1fr;
+    position: relative;
+  }
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aside {
+    display: none;
+  }
+  .recent-project-with-glance .card-orange,
+  .recent-project-with-glance .card-light {
+    height: 260px;
+  }
+  .menu-icon-category {
+    gap: 50px;
+    position: sticky;
+    top: 0px;
+    justify-content: start;
   }
 }
 
