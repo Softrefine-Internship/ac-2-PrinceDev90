@@ -22,6 +22,7 @@
     align-self: stretch;
     text-align: center;
     padding-bottom: 27px;
+    cursor: pointer;
     border-bottom: 1px solid rgba(157, 157, 157, 0.4);
   }
 
@@ -35,6 +36,10 @@
     justify-content: center;
     color: var(--color-white);
   }
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .aside {
@@ -165,7 +170,7 @@
   grid-column: 1 / -1;
   justify-content: space-between;
   margin-bottom: 30px;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
 
   .plus-icon-doted {
     height: 30px;

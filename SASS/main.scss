@@ -44,6 +44,7 @@ body {
         background-color: var(--color-light);
         color: var(--color-dark);
         font-weight: 700;
+        cursor: pointer;
 
         i {
           font-weight: 600;
@@ -58,6 +59,7 @@ body {
   margin-top: 30px;
   position: relative;
   padding: 0px 22px;
+  cursor: pointer;
   padding-bottom: 12px;
   border-bottom: 1px solid rgb(157, 157, 157, 0.4);
 
@@ -76,6 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 13px;
+    cursor: pointer;
 
     .item-2 > .sub-menu-item-container {
       color: #11111199;
@@ -381,6 +384,7 @@ body {
     display: flex;
     order: 3;
     grid-column: 1 / -1;
+    cursor: pointer;
   }
 
   .menu-icon-category h2 {
