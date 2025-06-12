@@ -105,7 +105,7 @@
   justify-self: stretch;
   align-self: stretch;
   text-align: center;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
   cursor: pointer;
   border-bottom: 1px solid rgba(157, 157, 157, 0.4);
 }
@@ -196,7 +196,7 @@
   background-color: var(--color-primary);
   border: none;
   color: var(--color-white);
-  padding: 9px 20px;
+  padding: 13px 20px;
   border-radius: 50rem;
 }
 .main .part_2 .sec-row .profile-nty-wrapper {
@@ -548,12 +548,37 @@ body {
   margin-left: auto;
   width: 100%;
 }
+.lable-menu .lable-menu-container .item-2 > .sub-menu-item-container li {
+  transition: all 0.3s ease-in-out;
+}
+.lable-menu .lable-menu-container .item-2 > .sub-menu-item-container li:hover {
+  font-weight: 600;
+  margin-left: 10px;
+}
 .lable-menu .lable-menu-container .item-2 > .sub-menu-item-container li:last-child {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
 }
 .lable-menu ul > li > div > p {
   font-weight: 550;
+}
+
+#first_menu {
+  display: none;
+  transition: all 0.2s ease-in;
+}
+
+#item_2:hover #first_menu {
+  display: flex;
+}
+
+#second_menu {
+  display: none;
+  transition: all 0.2s ease-in;
+}
+
+#item_2:hover #second_menu {
+  display: flex;
 }
 
 .recent-project-with-glance {
@@ -764,6 +789,12 @@ body {
 
 /* Mobile devices - up to 767px */
 @media only screen and (max-width: 425px) {
+  .main .part_2 .sec-row {
+    gap: 12px;
+  }
+  .main .part_2 .sec-row .add_project {
+    width: 100%;
+  }
   .dashboard {
     grid-template-columns: 1fr;
   }
@@ -850,6 +881,7 @@ body {
   .team-member-wrapper {
     flex-wrap: wrap;
     margin-bottom: 12px;
+    gap: 5px;
   }
   .time-conainer {
     flex-wrap: wrap;
@@ -873,7 +905,12 @@ body {
   }
 }
 /* Tablets - 768px to 1023px */
-@media only screen and (min-width: 425px) and (max-width: 1168px) {
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .main .part_2 {
+    padding: 12px;
+    column-gap: 12px;
+    grid-auto-rows: min-content;
+  }
   .dashboard {
     grid-template-columns: 1fr;
   }
@@ -973,6 +1010,117 @@ body {
   .make-prototype,
   .make-fixes {
     padding: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .main .part_2 {
+    padding: 12px;
+    column-gap: 12px;
+    grid-auto-rows: min-content;
+  }
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .main {
+    grid-template-columns: 65% 35%;
+  }
+  .aside {
+    display: none;
+  }
+  .recent-project-with-glance .card-orange,
+  .recent-project-with-glance .card-light {
+    height: 260px;
+  }
+  .menu-icon-category {
+    flex-direction: row;
+    display: grid;
+    gap: 10px;
+    padding: 12px 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-icon {
+    display: flex;
+    order: 3;
+    grid-column: 1/-1;
+  }
+  .menu-icon-category h2 {
+    padding: 0px;
+    line-height: 1;
+    justify-self: start;
+    align-self: center;
+    border-bottom: none;
+  }
+  .note-faq {
+    justify-self: flex-end;
+  }
+  .category-icon ul {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .category-icon ul li {
+    padding: 10px;
+  }
+  .main .part_1 {
+    padding: 12px;
+  }
+  .main .part_1 .search-darhboard {
+    margin-bottom: 12px;
+  }
+  .recent-project-with-glance {
+    gap: 12px;
+  }
+  .recent-project-with-glance .reminder-heading {
+    margin-top: 0px;
+  }
+  .res-new-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .dis-interm {
+    max-width: 100%;
+  }
+  .remind-btn {
+    flex-basis: min-content;
+    padding: 8px 12px;
+    align-self: flex-end;
+    margin-top: 20px;
+  }
+  .main .part_2 {
+    padding: 12px;
+  }
+  .team-member-head {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .team-member-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+  .time-conainer {
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+  .main .part_2 {
+    padding: 12px;
+    column-gap: 12px;
+    grid-auto-rows: min-content;
+  }
+  .change-color {
+    padding-top: 12px;
+    padding-right: 12px;
+  }
+  .add-new-task-box,
+  .change-color,
+  .make-prototype,
+  .make-fixes {
+    padding: 12px;
+  }
+  .main .part_2 .sec-row {
+    gap: 10px;
   }
 }
 
